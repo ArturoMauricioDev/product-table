@@ -1,0 +1,11 @@
+.category-container{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 12px;
+
+}
+.category-title{
+    font-size: 20;
+    font-weight: 700;
+
+}

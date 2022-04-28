@@ -1,0 +1,9 @@
+.product-row {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
