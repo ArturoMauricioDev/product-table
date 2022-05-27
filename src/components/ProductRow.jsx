@@ -3,13 +3,15 @@ import React from 'react'
 import '../styles/ProductRow.css'
 
 function ProductRow(props) {
-    const producto = props.name
-    const precio = props.price
-    const theme = 'product-row ' + props.theme
+    const name = props.name
+    const status = props.status
+    const avatar = props.image
     
     return (
-        <div className={theme}>
-            <span>{producto}</span><span>{`$${precio}`} </span>
+        <div className='product-row'>
+            <img src={avatar} alt={`Es el avatar de ${name} `} />
+            <span>{name}</span>
+            <span>{`${status}`} </span>
         </div>
     )
 }

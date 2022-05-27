@@ -12,12 +12,12 @@ function CategoryProductRow(props) {
                 {title}
             </div>
             <div className='category-body'>
-                {list.map((product) =>
+                {list.map((character) =>
                     <ProductRow
-                        name={product.name}
-                        price={product.price}
-                        key={product.id}
-                        theme={product.theme}
+                        name={character.name}
+                        status={character.status}
+                        key={character.name}
+                        image={character.image}
                     />)}
 
             </div>
