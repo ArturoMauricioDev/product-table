@@ -6,6 +6,8 @@ function CategoryProductRow(props) {
 
     const title = props.title
     const list = props.list
+
+   
     return (
         <div className='category-container'>
             <div className='category-title'>

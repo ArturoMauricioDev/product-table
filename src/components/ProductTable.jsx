@@ -1,10 +1,15 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import { SearchContext } from '../context/SearchContext'
+
 import { CategoryProductRow } from './CategoryProductRow'
-import { sportsList, electronicsList } from '../assets/filteredByCategories'
+//import { sportsList, electronicsList } from '../assets/filteredByCategories'
 import '../styles/ProductTable.css'
 
 
 function ProductTable() {
+
+    const { filterdElectronicsProducts, filterdSportsProducts } = useContext(SearchContext)
+
     return (
         <div className='product-table'>
             <div className='product-table__header'>
@@ -12,8 +17,8 @@ function ProductTable() {
                 <span>Price</span>
             </div>
             <div className='product-table__categories'>
-                <CategoryProductRow title='Sporting Goods' list={sportsList} />
-                <CategoryProductRow title='Electronics' list={electronicsList} />
+                <CategoryProductRow title='Sporting Goods' list={filterdElectronicsProducts} />
+                <CategoryProductRow title='Electronics' list={filterdSportsProducts} />
             </div>
         </div>
     )
