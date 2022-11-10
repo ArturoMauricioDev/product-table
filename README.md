@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# FilterableProductTable
+
+Este proyecto es parte del articulo:
+
+>¿Cómo utilizo atomic design en mis proyectos ReactJs?
+![Atomic design](https://arturomauriciodev.netlify.app/images/20.jpg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
